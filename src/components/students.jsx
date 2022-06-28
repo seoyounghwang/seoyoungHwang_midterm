@@ -34,11 +34,17 @@ class Students extends Component {
     }
     render() {
         return (
-            <div>
+          <>
+            <p style={{fontWeight: 'bold'}} className='text-center'>Students List</p>
+            <div className='conatiner d-flex justify-content-center'>
+              <div className="row justify-content-center w-75 " >
                 {this.state.cardInfo.map(student=> (
-                    <Student key={student.image} student={student}/> 
+                    <Student className="" key={student.image} student={student}/> 
                 ))}
+              </div>
             </div>
+
+          </>
         );
     }
 }
