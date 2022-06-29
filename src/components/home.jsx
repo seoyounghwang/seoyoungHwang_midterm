@@ -10,15 +10,20 @@ class home extends Component {
             <Router>
                 <ul className="App-header">
                     <li>
-                        <Link to="/">students</Link>
+                        <Link to="/">Demo</Link>
                     </li>
                     <li>
                         <Link to="/demo">Demo</Link>
                     </li>
+                    <li>
+                        <Link to="/students">Students</Link>
+                    </li>
                 </ul>
                 <Routes>
-                    <Route exact path='/' element={< Students />}></Route>
+                    <Route exact path='/' element={< Demo />}></Route>
                     <Route exact path='/demo' element={< Demo />}></Route>
+                    <Route exact path='/students' element={< Students />}></Route>
+
                 </Routes>
 
             </Router>
